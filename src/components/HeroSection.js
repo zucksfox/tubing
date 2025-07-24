@@ -12,7 +12,7 @@ const HeroSection = () => {
   }, []);
 
   const handleWhatsAppClick = () => {
-    const phoneNumber = '6281234567890';
+    const phoneNumber = '6287776656166';
     const message = 'Halo saya ingin pesan rafting di XGono Adventure';
     const url = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`;
     window.open(url, '_blank');

@@ -21,7 +21,7 @@ const FloatingWhatsApp = () => {
   }, []);
 
   const handleWhatsAppClick = () => {
-    const phoneNumber = '6281234567890';
+    const phoneNumber = '6287776656166';
     const message = 'Halo, saya tertarik dengan paket wisata arung jeram di XGono Adventure. Bisa info lebih lanjut?';
     const url = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`;
     window.open(url, '_blank');

@@ -1,6 +1,6 @@
 # XGono Tubing Adventure - Landing Page
 
-Proyek React.js untuk landing page wisata arung jeram "XGono Tubing Adventure" dengan tema warna biru yang menarik dan eye-catching.
+Proyek React.js untuk landing page wisata tubing "XGono Tubing Adventure" dengan tema warna biru yang menarik dan eye-catching.
 
 ## ✨ Fitur
 
@@ -23,7 +23,7 @@ Proyek React.js untuk landing page wisata arung jeram "XGono Tubing Adventure" d
 
 1. **Hero Section**
    - Judul: "XGono Tubing Adventure"
-   - Slogan: "Rasakan Sensasi Arung Jeram di Tengah Alam!"
+   - Slogan: "Rasakan Sensasi Tubing di Tengah Alam!"
    - Tombol "Pesan Sekarang" dengan link WhatsApp
    - Background image dengan parallax effect
 
@@ -111,7 +111,7 @@ https://wa.me/6281234567890?text=MESSAGE
 ```
 
 Format pesan otomatis:
-- Hero: "Halo saya ingin pesan rafting di XGono Adventure"
+- Hero: "Halo saya ingin pesan tubing di XGono Adventure"
 - Pricelist: "Halo, saya ingin pesan paket [NAMA_PAKET] di XGono Tubing Adventure"
 - Contact: "Halo, saya ingin mengetahui informasi lebih lanjut tentang XGono Tubing Adventure"
 

@@ -99,7 +99,7 @@ const GallerySection = () => {
             </h2>
             <p className="text-lg text-gray-600 max-w-3xl mx-auto leading-relaxed">
               Lihat momen-momen seru dan pengalaman tak terlupakan para petualang 
-              yang telah merasakan sensasi arung jeram bersama XGono Adventure.
+              yang telah merasakan sensasi tubing bersama XGono Adventure.
             </p>
           </div>
 

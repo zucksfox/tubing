@@ -21,7 +21,7 @@ const PricelistSection = () => {
   }, []);
 
   const handleWhatsAppClick = (packageName) => {
-    const phoneNumber = '6281234567890';
+    const phoneNumber = '6287776656166';
     const message = `Halo, saya ingin pesan paket ${packageName} di XGono Tubing Adventure`;
     const url = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`;
     window.open(url, '_blank');
@@ -34,7 +34,7 @@ const PricelistSection = () => {
       duration: "2-3 Jam",
       popular: false,
       features: [
-        "Arung jeram 5 km",
+        "Tubing 5 km",
         "Peralatan lengkap (helm, life jacket)",
         "Pemandu berpengalaman",
         "Dokumentasi foto",
@@ -47,7 +47,7 @@ const PricelistSection = () => {
       duration: "3-4 Jam",
       popular: true,
       features: [
-        "Arung jeram 7 km",
+        "Tubing 7 km",
         "Peralatan lengkap untuk keluarga",
         "Pemandu khusus keluarga",
         "Dokumentasi foto & video",
@@ -62,7 +62,7 @@ const PricelistSection = () => {
       duration: "1 Hari 1 Malam",
       popular: false,
       features: [
-        "Arung jeram 10 km",
+        "Tubing 10 km",
         "Peralatan camping lengkap",
         "3x makan (malam, pagi, siang)",
         "Api unggun",
@@ -83,7 +83,7 @@ const PricelistSection = () => {
               Paket Wisata
             </h2>
             <p className="text-lg text-gray-600 max-w-3xl mx-auto leading-relaxed">
-              Pilih paket wisata arung jeram yang sesuai dengan kebutuhan dan budget Anda. 
+              Pilih paket wisata tubing yang sesuai dengan kebutuhan dan budget Anda.
               Semua paket sudah termasuk peralatan safety dan pemandu berpengalaman.
             </p>
           </div>

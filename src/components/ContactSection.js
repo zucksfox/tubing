@@ -52,7 +52,7 @@ const ContactSection = () => {
     {
       icon: <FaPhone className="text-2xl text-blue-primary" />,
       title: "Kontak Darurat",
-      info: "+62 812-3456-7890",
+      info: "+628777-6656-166",
       subtitle: "24/7 untuk keperluan urgent"
     }
   ];
@@ -167,7 +167,7 @@ const ContactSection = () => {
                 🌟 Tunggu apa lagi? Adventure menanti Anda!
               </p>
               <p className="opacity-80">
-                Bergabunglah dengan ribuan petualang yang telah merasakan sensasi arung jeram bersama XGono Adventure
+                Bergabunglah dengan ribuan petualang yang telah merasakan sensasi tubing bersama XGono Adventure
               </p>
             </div>
           </div>

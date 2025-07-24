@@ -1,4 +1,5 @@
 import React from 'react';
+import Header from './components/Header';
 import HeroSection from './components/HeroSection';
 import PricelistSection from './components/PricelistSection';
 import GallerySection from './components/GallerySection';
@@ -10,6 +11,9 @@ import FloatingWhatsApp from './components/FloatingWhatsApp';
 function App() {
   return (
     <div className="App">
+      {/* Header Navigation */}
+      <Header />
+      
       {/* Hero Section */}
       <HeroSection />
       

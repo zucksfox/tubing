@@ -33,7 +33,7 @@ const HeroSection = () => {
       <div 
         className="absolute inset-0 bg-cover bg-center"
         style={{
-          backgroundImage: 'url("https://images.unsplash.com/photo-1544551763-46a013bb70d5?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80")',
+          backgroundImage: 'url("assets/images/s.png")',
           transform: `translateY(${scrollY * 0.3}px)`
         }}
       ></div>

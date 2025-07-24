@@ -2,6 +2,7 @@ import React from 'react';
 import HeroSection from './components/HeroSection';
 import PricelistSection from './components/PricelistSection';
 import GallerySection from './components/GallerySection';
+import VideoProfileSection from './components/VideoProfileSection';
 import ContactSection from './components/ContactSection';
 import Footer from './components/Footer';
 import FloatingWhatsApp from './components/FloatingWhatsApp';
@@ -17,6 +18,9 @@ function App() {
       
       {/* Gallery Section */}
       <GallerySection />
+      
+      {/* Video Profile Section */}
+      <VideoProfileSection />
       
       {/* Contact Section */}
       <ContactSection />

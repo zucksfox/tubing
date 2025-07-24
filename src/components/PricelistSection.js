@@ -78,15 +78,6 @@ const PricelistSection = () => {
       <div className="container mx-auto px-4">
         <div className="max-w-6xl mx-auto">
           {/* Header */}
-          <div className={`text-center mb-16 ${isVisible ? 'animate-slide-up' : 'opacity-0'}`}>
-            <h2 className="text-4xl md:text-5xl font-bold text-gray-800 mb-6">
-              Paket Wisata
-            </h2>
-            <p className="text-lg text-gray-600 max-w-3xl mx-auto leading-relaxed">
-              Pilih paket wisata tubing yang sesuai dengan kebutuhan dan budget Anda.
-              Semua paket sudah termasuk peralatan safety dan pemandu berpengalaman.
-            </p>
-          </div>
 
           {/* Price Cards */}
           <div className="grid md:grid-cols-3 gap-8">

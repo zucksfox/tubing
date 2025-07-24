@@ -12,6 +12,9 @@ module.exports = {
         'blue-light': '#dbeafe',
         'blue-dark': '#1e40af',
       },
+      boxShadow: {
+        '3xl': '0 35px 60px -12px rgba(0, 0, 0, 0.25)',
+      },
       animation: {
         'fade-in': 'fadeIn 0.8s ease-in-out',
         'slide-up': 'slideUp 0.8s ease-out',

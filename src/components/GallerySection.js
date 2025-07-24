@@ -1,6 +1,11 @@
 import React, { useEffect, useState, useCallback } from 'react';
 import { FaTimes, FaChevronLeft, FaChevronRight } from 'react-icons/fa';
 
+// Import gambar lokal
+import tubing1 from '../assets/images/tubing/tubing1.jpg';
+import tubing2 from '../assets/images/tubing/tubing2.jpg';
+import tubing3 from '../assets/images/tubing/tubing3.jpg';
+
 const GallerySection = () => {
   const [isVisible, setIsVisible] = useState(false);
   const [lightboxOpen, setLightboxOpen] = useState(false);
@@ -25,33 +30,18 @@ const GallerySection = () => {
   const galleryImages = [
     {
       id: 1,
-      src: "https://images.unsplash.com/photo-1544551763-46a013bb70d5?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80",
-      alt: "Tubing seru"
+      src: tubing1,
+      alt: "Petualangan Tubing XGono - Keseruan di Sungai"
     },
     {
       id: 2,
-      src: "https://images.unsplash.com/photo-1527004760525-b2b22ed5b9e1?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80",
-      alt: "Tim adventure"
+      src: tubing2,
+      alt: "Tubing Adventure - Momen Bersama Keluarga"
     },
     {
       id: 3,
-      src: "https://images.unsplash.com/photo-1506905925346-21bda4d32df4?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80",
-      alt: "Keindahan alam"
-    },
-    {
-      id: 4,
-      src: "https://images.unsplash.com/photo-1502780402662-acc01917872e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80",
-      alt: "Moment bersama"
-    },
-    {
-      id: 5,
-      src: "https://images.unsplash.com/photo-1441974231531-c6227db76b6e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80",
-      alt: "Pemandangan sungai"
-    },
-    {
-      id: 6,
-      src: "https://images.unsplash.com/photo-1501594907352-04cda38ebc29?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80",
-      alt: "Adventure time"
+      src: tubing3,
+      alt: "XGono Tubing - Sensasi Menantang Adrenalin"
     }
   ];
 

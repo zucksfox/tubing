@@ -20,7 +20,7 @@ const VideoProfileSection = () => {
   }, []);
 
   // Ganti dengan ID video YouTube yang diinginkan
-  const youtubeVideoId = "czQ2KID9plQ"; // Contoh: Amazing Nature 4K video, ganti dengan video profil XGono yang sesuai
+  const youtubeVideoId = "UuPaS81n0xg"; // Contoh: Amazing Nature 4K video, ganti dengan video profil XGono yang sesuai
 
   return (
     <section id="video-profile" className="py-20 bg-gray-50">

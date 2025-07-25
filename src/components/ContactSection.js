@@ -22,18 +22,18 @@ const ContactSection = () => {
   }, []);
 
   const handleWhatsAppClick = () => {
-    const phoneNumber = '6287776656166';
+    const phoneNumber = '6285702784443';
     const message = 'Halo, saya ingin mengetahui informasi lebih lanjut tentang XGono Tubing Adventure';
     const url = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`;
     window.open(url, '_blank');
   };
 
   const handleInstagramClick = () => {
-    window.open('https://instagram.com/xgono_adventure', '_blank');
+    window.open('https://instagram.com/xgonotubingadventure', '_blank');
   };
 
   const handleTiktokClick = () => {
-    window.open('https://tiktok.com/@xgono_adventure', '_blank');
+    window.open('https://tiktok.com/@xgonotubingadventure', '_blank');
   };
 
   const contactInfo = [
@@ -52,7 +52,7 @@ const ContactSection = () => {
     {
       icon: <FaPhone className="text-2xl text-blue-primary" />,
       title: "Kontak Darurat",
-      info: "+628777-6656-166",
+      info: "+6285702784443",
       subtitle: "24/7 untuk keperluan urgent"
     }
   ];
@@ -155,7 +155,7 @@ const ContactSection = () => {
               {/* Emergency Info */}
               <div className="mt-6 text-center">
                 <p className="text-sm opacity-70 mb-2">Untuk keperluan darurat:</p>
-                <p className="text-lg font-semibold">+62 812-3456-7890</p>
+                <p className="text-lg font-semibold">+62857-02784-443</p>
               </div>
             </div>
           </div>

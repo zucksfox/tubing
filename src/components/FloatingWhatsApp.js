@@ -21,7 +21,7 @@ const FloatingWhatsApp = () => {
   }, []);
 
   const handleWhatsAppClick = () => {
-    const phoneNumber = '6287776656166';
+    const phoneNumber = '6285702784443';
     const message = 'Halo, saya tertarik dengan paket wisata tubing di XGono Adventure. Bisa info lebih lanjut?';
     const url = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`;
     window.open(url, '_blank');

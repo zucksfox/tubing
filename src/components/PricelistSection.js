@@ -1,24 +1,7 @@
-import React, { useEffect, useState } from 'react';
+import React from 'react';
 import { FaCheck, FaWhatsapp, FaStar } from 'react-icons/fa';
 
 const PricelistSection = () => {
-  const [isVisible, setIsVisible] = useState(false);
-
-  useEffect(() => {
-    const observer = new IntersectionObserver(
-      ([entry]) => {
-        if (entry.isIntersecting) {
-          setIsVisible(true);
-        }
-      },
-      { threshold: 0.3 }
-    );
-
-    const section = document.getElementById('pricelist');
-    if (section) observer.observe(section);
-
-    return () => observer.disconnect();
-  }, []);
 
   const handleWhatsAppClick = (packageName) => {
     const phoneNumber = '6285702784443';
@@ -74,7 +57,7 @@ const PricelistSection = () => {
   ];
 
   return (
-    <section id="pricelist" className="py-20 bg-gradient-to-br from-blue-light to-white">
+    <section id="pricelist" className="py-20 bg-white">
       <div className="container mx-auto px-4">
         <div className="max-w-6xl mx-auto">
           {/* Header */}
@@ -84,10 +67,9 @@ const PricelistSection = () => {
             {packages.map((pkg, index) => (
               <div
                 key={index}
-                className={`relative bg-white rounded-2xl shadow-lg border border-gray-100 transition-all duration-300 transform hover:scale-105 hover:shadow-2xl ${
+                className={`relative bg-white rounded-2xl shadow-lg border border-gray-100 transition-all duration-300 transform hover:scale-105 hover:shadow-2xl hover:border-blue-200 ${
                   pkg.popular ? 'ring-4 ring-blue-primary ring-opacity-20' : ''
-                } ${isVisible ? 'animate-slide-up' : 'opacity-0'}`}
-                style={{ animationDelay: `${index * 0.2}s` }}
+                }`}
               >
                 {/* Popular badge */}
                 {pkg.popular && (
@@ -129,10 +111,10 @@ const PricelistSection = () => {
                   {/* CTA Button */}
                   <button
                     onClick={() => handleWhatsAppClick(pkg.name)}
-                    className={`w-full py-3 px-6 rounded-lg font-semibold transition-all duration-300 flex items-center justify-center gap-2 ${
+                    className={`w-full py-3 px-6 rounded-lg font-semibold transition-all duration-300 flex items-center justify-center gap-2 hover:transform hover:scale-105 ${
                       pkg.popular
-                        ? 'bg-blue-primary hover:bg-blue-dark text-white transform hover:scale-105'
-                        : 'bg-blue-light hover:bg-blue-primary text-blue-primary hover:text-white'
+                        ? 'bg-blue-primary hover:bg-blue-dark text-white hover:shadow-lg'
+                        : 'bg-blue-light hover:bg-blue-primary text-blue-primary hover:text-white hover:shadow-lg'
                     }`}
                   >
                     <FaWhatsapp />
@@ -144,7 +126,7 @@ const PricelistSection = () => {
           </div>
 
           {/* Additional info */}
-          <div className={`text-center mt-12 ${isVisible ? 'animate-fade-in' : 'opacity-0'}`}>
+          <div className="text-center mt-12">
             <p className="text-gray-600 mb-4">
               🎯 Gratis konsultasi dan diskusi paket sesuai kebutuhan Anda
             </p>

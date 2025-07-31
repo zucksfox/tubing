@@ -25,6 +25,7 @@ const Header = () => {
 
   const navigationItems = [
     { id: 'hero', label: 'Home', icon: Home },
+    {id: 'video-profile', label: 'Video Profile', icon: User },
     { id: 'gallery', label: 'Galeri', icon: Camera },
     { id: 'contact', label: 'Kontak', icon: Phone },
   ];

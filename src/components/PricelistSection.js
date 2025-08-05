@@ -4,7 +4,7 @@ import { FaCheck, FaWhatsapp, FaStar } from 'react-icons/fa';
 const PricelistSection = () => {
 
   const handleWhatsAppClick = (packageName) => {
-    const phoneNumber = '6285702784443';
+    const phoneNumber = '6287719048030';
     const message = `Halo, saya ingin pesan paket ${packageName} di XGono Tubing Adventure`;
     const url = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`;
     window.open(url, '_blank');

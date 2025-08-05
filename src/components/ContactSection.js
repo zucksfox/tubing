@@ -22,7 +22,7 @@ const ContactSection = () => {
   }, []);
 
   const handleWhatsAppClick = () => {
-    const phoneNumber = '6285702784443';
+    const phoneNumber = '6287719048030';
     const message = 'Halo, saya ingin mengetahui informasi lebih lanjut tentang XGono Tubing Adventure';
     const url = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`;
     window.open(url, '_blank');
@@ -52,8 +52,14 @@ const ContactSection = () => {
     {
       icon: <FaPhone className="text-2xl text-blue-primary" />,
       title: "Kontak Darurat",
-      info: "+6285702784443",
+      info: "+628561899829",
       subtitle: "24/7 untuk keperluan urgent"
+    },
+    {
+      icon: <FaPhone className="text-2xl text-blue-primary" />,
+      title: "Kontak Darurat",
+      info: "+6285712784443",
+      subtitle: "Untuk informasi lebih lanjut"
     }
   ];
 
@@ -155,7 +161,8 @@ const ContactSection = () => {
               {/* Emergency Info */}
               <div className="mt-6 text-center">
                 <p className="text-sm opacity-70 mb-2">Untuk keperluan darurat:</p>
-                <p className="text-lg font-semibold">+62857-02784-443</p>
+                <p className="text-lg font-semibold">+628561899829</p>
+                <p className="text-sm opacity-70">+6285702784443</p>
               </div>
             </div>
           </div>

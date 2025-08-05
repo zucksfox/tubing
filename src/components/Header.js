@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { Menu, X, Home, User, Camera, Phone } from 'lucide-react';
+import { Menu, X, Home, Camera, Phone } from 'lucide-react';
 import logoXGono from '../assets/images/logoxgono.png';
 
 const Header = () => {
@@ -25,7 +25,6 @@ const Header = () => {
 
   const navigationItems = [
     { id: 'hero', label: 'Home', icon: Home },
-    {id: 'video-profile', label: 'Video Profile', icon: User },
     { id: 'gallery', label: 'Galeri', icon: Camera },
     { id: 'contact', label: 'Kontak', icon: Phone },
   ];

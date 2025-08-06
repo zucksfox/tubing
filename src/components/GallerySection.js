@@ -1,7 +1,8 @@
 import React, { useEffect, useState, useCallback } from 'react';
 import { FaTimes, FaChevronLeft, FaChevronRight } from 'react-icons/fa';
+import { loadData } from '../data/siteData';
 
-// Import gambar lokal
+// Import gambar lokal sebagai fallback
 import tubing1 from '../assets/images/tubing/tubing1.jpg';
 import tubing2 from '../assets/images/tubing/tubing2.jpg';
 import tubing3 from '../assets/images/tubing/tubing3.jpg';
@@ -10,6 +11,7 @@ const GallerySection = () => {
   const [isVisible, setIsVisible] = useState(false);
   const [lightboxOpen, setLightboxOpen] = useState(false);
   const [currentImage, setCurrentImage] = useState(0);
+  const [galleryImages, setGalleryImages] = useState([]);
 
   useEffect(() => {
     const observer = new IntersectionObserver(
@@ -27,23 +29,39 @@ const GallerySection = () => {
     return () => observer.disconnect();
   }, []);
 
-  const galleryImages = [
-    {
-      id: 1,
-      src: tubing1,
-      alt: "Petualangan Tubing XGono - Keseruan di Sungai"
-    },
-    {
-      id: 2,
-      src: tubing2,
-      alt: "Tubing Adventure - Momen Bersama Keluarga"
-    },
-    {
-      id: 3,
-      src: tubing3,
-      alt: "XGono Tubing - Sensasi Menantang Adrenalin"
-    }
-  ];
+  useEffect(() => {
+    const data = loadData();
+    const images = data.galleryImages || [];
+    
+    // Convert image data to proper format with fallback
+    const processedImages = images.map(img => {
+      let imageSrc = img.src;
+      
+      // If src is a local filename, use imported images as fallback
+      if (!img.src?.startsWith('http') && !img.src?.startsWith('data:')) {
+        switch(img.src) {
+          case 'tubing1.jpg':
+            imageSrc = tubing1;
+            break;
+          case 'tubing2.jpg':
+            imageSrc = tubing2;
+            break;
+          case 'tubing3.jpg':
+            imageSrc = tubing3;
+            break;
+          default:
+            imageSrc = img.src;
+        }
+      }
+      
+      return {
+        ...img,
+        src: imageSrc
+      };
+    });
+    
+    setGalleryImages(processedImages);
+  }, []);
 
 
   const openLightbox = (index) => {

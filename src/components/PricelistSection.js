@@ -1,66 +1,38 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import { FaCheck, FaWhatsapp, FaStar } from 'react-icons/fa';
+import { loadData } from '../data/siteData';
 
 const PricelistSection = () => {
+  const [packages, setPackages] = useState([]);
+  const [contact, setContact] = useState({});
+
+  useEffect(() => {
+    const data = loadData();
+    setPackages(data.packages || []);
+    setContact(data.contact || {});
+  }, []);
 
   const handleWhatsAppClick = (packageName) => {
-    const phoneNumber = '6287719048030';
+    const phoneNumber = contact.whatsappNumber || '6287719048030';
     const message = `Halo, saya ingin pesan paket ${packageName} di XGono Tubing Adventure`;
     const url = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`;
     window.open(url, '_blank');
   };
-
-  const packages = [
-    {
-      name: "Paket Reguler",
-      price: "Rp 75.000",
-      duration: "2-3 Jam",
-      popular: false,
-      features: [
-        "Tubing 5 km",
-        "Peralatan lengkap (helm, life jacket)",
-        "Pemandu berpengalaman",
-        "Dokumentasi foto",
-        "Snack ringan"
-      ]
-    },
-    {
-      name: "Paket Keluarga",
-      price: "Rp 125.000",
-      duration: "3-4 Jam",
-      popular: true,
-      features: [
-        "Tubing 7 km",
-        "Peralatan lengkap untuk keluarga",
-        "Pemandu khusus keluarga",
-        "Dokumentasi foto & video",
-        "Makan siang",
-        "Area bermain anak",
-        "Asuransi kecelakaan"
-      ]
-    },
-    {
-      name: "Paket Camping",
-      price: "Rp 200.000",
-      duration: "1 Hari 1 Malam",
-      popular: false,
-      features: [
-        "Tubing 10 km",
-        "Peralatan camping lengkap",
-        "3x makan (malam, pagi, siang)",
-        "Api unggun",
-        "Games outbound",
-        "Dokumentasi lengkap",
-        "Tenda dan sleeping bag"
-      ]
-    }
-  ];
 
   return (
     <section id="pricelist" className="py-20 bg-white">
       <div className="container mx-auto px-4">
         <div className="max-w-6xl mx-auto">
           {/* Header */}
+          <div className="text-center mb-16">
+            <h2 className="text-4xl md:text-5xl font-bold text-gray-800 mb-6">
+              Paket Wisata
+            </h2>
+            <p className="text-lg text-gray-600 max-w-3xl mx-auto leading-relaxed">
+              Pilih paket petualangan tubing yang sesuai dengan kebutuhan dan budget Anda. 
+              Setiap paket dirancang untuk memberikan pengalaman tak terlupakan.
+            </p>
+          </div>
 
           {/* Price Cards */}
           <div className="grid md:grid-cols-3 gap-8">

@@ -1,7 +1,9 @@
 import React, { useEffect, useState } from 'react';
+import { loadData } from '../data/siteData';
 
 const VideoProfileSection = () => {
   const [isVisible, setIsVisible] = useState(false);
+  const [videoProfile, setVideoProfile] = useState({});
 
   useEffect(() => {
     const observer = new IntersectionObserver(
@@ -19,8 +21,16 @@ const VideoProfileSection = () => {
     return () => observer.disconnect();
   }, []);
 
-  // Ganti dengan ID video YouTube yang diinginkan
-  const youtubeVideoId = "UuPaS81n0xg"; // Contoh: Amazing Nature 4K video, ganti dengan video profil XGono yang sesuai
+  useEffect(() => {
+    const data = loadData();
+    setVideoProfile(data.videoProfile || {
+      youtubeVideoId: "UuPaS81n0xg",
+      title: "Profil XGono Adventure",
+      description: "Saksikan video profil kami yang menampilkan keseruan dan pengalaman tak terlupakan di XGono Tubing Adventure."
+    });
+  }, []);
+
+  const { youtubeVideoId, title, description } = videoProfile;
 
   return (
     <section id="video-profile" className="py-20 bg-gray-50">

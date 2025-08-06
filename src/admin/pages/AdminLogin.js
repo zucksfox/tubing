@@ -147,7 +147,7 @@ const AdminLogin = ({ onLogin }) => {
         {/* Footer */}
         <div className="text-center mt-8">
           <p className="text-blue-100 text-sm">
-            © 2024 XGono Tubing Adventure
+            © 2025 XGono Tubing Adventure
           </p>
         </div>
       </div>

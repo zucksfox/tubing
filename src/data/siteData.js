@@ -4,16 +4,16 @@ export const siteData = {
   packages: [
     {
       id: 1,
-      name: "Paket Reguler",
+      name: "Paket Standar",
       price: "Rp 75.000",
       duration: "1-1,5 Jam",
       popular: false,
       features: [
         "Tubing 2 km",
-        "Peralatan lengkap (helm, life jacket)",
+        "Safety (Pelampung, helm, sepatu)",
         "Pemandu berpengalaman",
-        "Dokumentasi foto",
-        "Snack ringan"
+        "Dokumentasi Unlimited (min 15 peserta)",
+        "Snack"
       ]
     },
     {
@@ -24,32 +24,31 @@ export const siteData = {
       popular: true,
       features: [
         "Tubing 2 km",
-        "Welcome Drink & Snack",
-        "River Tubing",
+        "Safety (Pelampung, helm, sepatu)",
+        "Pemandu berpengalaman",
         "Fun Games",
         "Pemandu",
-        "Sound System",
-        "Dokumentasi foto",
-        "Makan Siang",
+        "Dokumentasi Unlimited",
+        "Makan",
+        "Snack",
         "Kelapa Muda",
-        "Tempat Transit",
         "Asuransi"
       ]
     },
     {
       id: 3,
-      name: "Paket Camping",
-      price: "Rp 200.000",
+      name: "Paket Reguler",
+      price: "Rp 100.000",
       duration: "1-1,5 Jam",
       popular: false,
       features: [
         "Tubing 2 km",
-        "Peralatan camping lengkap",
-        "3x makan (malam, pagi, siang)",
-        "Api unggun",
-        "Games outbound",
-        "Dokumentasi lengkap",
-        "Tenda dan sleeping bag"
+        "Safety (Pelampung, helm, sepatu)",
+        "Pemandu berpengalaman",
+        "Makan",
+        "Snack",
+        "Kelapa Muda",
+        "Asuransi"
       ]
     }
   ],
@@ -78,7 +77,7 @@ export const siteData = {
 
   // Data video
   videoProfile: {
-    youtubeVideoId: "UuPaS81n0xg",
+    youtubeVideoId: "1c6PjiYGjkI",
     title: "Profil XGono Adventure",
     description: "Saksikan video profil kami yang menampilkan keseruan dan pengalaman tak terlupakan di XGono Tubing Adventure."
   },

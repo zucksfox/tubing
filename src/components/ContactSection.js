@@ -160,9 +160,8 @@ const ContactSection = () => {
 
               {/* Emergency Info */}
               <div className="mt-6 text-center">
-                <p className="text-sm opacity-70 mb-2">Untuk keperluan darurat:</p>
-                <p className="text-lg font-semibold">+628561899829</p>
-                <p className="text-sm opacity-70">+6285702784443</p>
+                <p className="text-sm opacity-70 mb-2">Segera Hubungi Kami</p>
+                <p className='font-bold'>Kami Siap Membantu</p>
               </div>
             </div>
           </div>

@@ -46,7 +46,7 @@ const ContactSection = () => {
     {
       icon: <FaClock className="text-2xl text-blue-primary" />,
       title: "Jam Operasional",
-      info: "Setiap Hari 08:00 - 17:00 WIB",
+      info: "Setiap Hari 08:00 - 15:00 WIB",
       subtitle: "Reservasi H-1 untuk hasil terbaik"
     },
     {

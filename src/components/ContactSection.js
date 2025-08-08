@@ -33,7 +33,7 @@ const ContactSection = () => {
   };
 
   const handleTiktokClick = () => {
-    window.open('https://tiktok.com/@xgonotubingadventure', '_blank');
+    window.open('https://www.tiktok.com/@xgonotubing_adventure', '_blank');
   };
 
   const contactInfo = [
